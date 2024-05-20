@@ -1,4 +1,6 @@
 import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
 from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):
@@ -19,4 +21,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-
